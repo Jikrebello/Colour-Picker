@@ -18,7 +18,7 @@
                     FontAttributes="Bold"
                     FontSize="Large"
                     HorizontalTextAlignment="Center"
-                    Text="Colour Maker" />
+                    Text="Colour Picker" />
                 <Label x:Name="label_RedValue" Text="Red Value:" />
                 <Slider
                     x:Name="slider_Red"
@@ -26,6 +26,7 @@
                     ValueChanged="Slider_ValueChanged" />
 
                 <Label x:Name="label_GreenValue" Text="Green Value:" />
+
                 <Slider
                     x:Name="slider_Green"
                     ThumbColor="{StaticResource Primary}"

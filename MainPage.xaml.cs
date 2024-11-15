@@ -30,44 +30,38 @@ namespace Colour_Picker
             button_RandomColour.BackgroundColor = color;
             Container.BackgroundColor = color;
 
-            //// Red Value
-            //var redColor = Color.FromRgb(color.Red, 0, 0);
-            //label_RedValue.FormattedText = new FormattedString
-            //{
-            //    Spans =
-            //    {
-            //        new Span { Text = "Red Value: ", TextColor = Colors.LightGrey },
-            //        new Span { Text = redColor.ToHex(), TextColor = redColor }
-            //    }
-            //};
-            //slider_Red.ThumbColor = redColor;
-            //slider_Red.MinimumTrackColor = redColor;
+            // Red Value
+            var redColor = Color.FromRgb(color.Red, 0, 0);
+            label_RedValue.FormattedText = new FormattedString
+            {
+                Spans =
+                {
+                    new Span { Text = "Red Value: ", TextColor = Colors.LightGrey },
+                    new Span { Text = redColor.ToHex(), TextColor = Colors.LightGrey },
+                },
+            };
 
-            //// Green Value
-            //var greenColor = Color.FromRgb(0, color.Green, 0);
-            //label_GreenValue.FormattedText = new FormattedString
-            //{
-            //    Spans =
-            //    {
-            //        new Span { Text = "Green Value: ", TextColor = Colors.LightGrey },
-            //        new Span { Text = greenColor.ToHex(), TextColor = greenColor }
-            //    }
-            //};
-            //slider_Green.ThumbColor = greenColor;
-            //slider_Green.MinimumTrackColor = greenColor;
+            // Green Value
+            var greenColor = Color.FromRgb(0, color.Green, 0);
+            label_GreenValue.FormattedText = new FormattedString
+            {
+                Spans =
+                {
+                    new Span { Text = "Green Value: ", TextColor = Colors.LightGrey },
+                    new Span { Text = greenColor.ToHex(), TextColor = Colors.LightGrey },
+                },
+            };
 
-            //// Blue Value
-            //var blueColor = Color.FromRgb(0, 0, color.Blue);
-            //label_BlueValue.FormattedText = new FormattedString
-            //{
-            //    Spans =
-            //    {
-            //        new Span { Text = "Blue Value: ", TextColor = Colors.LightGrey },
-            //        new Span { Text = blueColor.ToHex(), TextColor = blueColor }
-            //    }
-            //};
-            //slider_Blue.ThumbColor = blueColor;
-            //slider_Blue.MinimumTrackColor = blueColor;
+            // Blue Value
+            var blueColor = Color.FromRgb(0, 0, color.Blue);
+            label_BlueValue.FormattedText = new FormattedString
+            {
+                Spans =
+                {
+                    new Span { Text = "Blue Value: ", TextColor = Colors.LightGrey },
+                    new Span { Text = blueColor.ToHex(), TextColor = Colors.LightGrey },
+                },
+            };
 
             // Full Hex Value
             label_HexValue.Text = color.ToHex();
